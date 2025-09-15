@@ -121,6 +121,30 @@
     font-style: italic;
 }
 
+/*buttons*/
+.about-buttons .btn {
+    width: 20%;
+    margin-top: 2em;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.about-buttons .btn-primary {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.about-buttons .btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.about-buttons .btn:hover {
+    opacity: 0.9;
+}
+
 /*media--------------------------------*/
 @media (max-width: 991px) {
     .about-values ul {
@@ -151,5 +175,11 @@
     .about-history p {
         font-size: 16px;
         line-height: 1.4;
+    }
+}
+
+@media (max-width: 767px) {
+    .about-buttons .btn {
+        width: 70%;
     }
 }
