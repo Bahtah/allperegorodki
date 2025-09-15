@@ -1,0 +1,103 @@
+/* Стиль для страницы Контакты */
+.page_contact {
+    text-align: center;
+}
+
+/* Заголовок */
+.page_contact_title {
+    color: #333;
+}
+
+/* Контейнер для информации и формы */
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 50px auto;
+}
+
+/* Стили для контактных деталей и формы */
+.contact-details, .contact-form {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Обычные стили для текста и полей формы */
+.contact-details p, .contact-form input, .contact-form textarea {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.contact-details i {
+    color: #0056b3;
+    margin-right: 10px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.contact-form button {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.contact-form button:hover {
+    background-color: #0044a1;
+}
+
+/* Мобильная адаптация */
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-details, .contact-form {
+        width: 100%;
+    }
+
+    .contact-form button {
+        width: 100%;
+    }
+    .page_contact_title {
+        font-size: 30px;
+    }
+}
+
+
+/* map */
+#map {
+    width: 100%;
+    height: 600px; /* Высота карты */
+    border-radius: 10px; /* Округление углов */
+    margin-top: 20px; /* Отступ сверху */
+}
+
+@media (max-width: 768px) {
+    #map {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    #map {
+        height: 200px;
+    }
+}

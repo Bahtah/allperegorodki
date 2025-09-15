@@ -1,0 +1,159 @@
+.footer {
+    background-color: #222; /* Темный фон */
+    color: #fff;
+    padding: 60px 0;
+}
+
+.footer_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+}
+
+/* Логотип */
+.footer_logo img {
+    width: 50%;
+}
+
+.footer_nav, .footer_contacts{
+    border-right: solid 4px #ffffff;
+    padding-right: 8px;
+}
+
+/* Навигация */
+.footer_nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.footer_nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer_nav a:hover {
+    color: #ffcc00;
+}
+
+/* Контакты */
+.footer_contacts p, .footer_contacts a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.footer_contacts a:hover {
+    color: #ffcc00;
+}
+
+/* Соцсети */
+.footer_socials {
+    display: flex;
+    gap: 15px;
+}
+
+.footer_socials a {
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.footer_socials a:hover {
+    color: #ffcc00;
+}
+
+/* Стили для копирайта и политики */
+.footer-policy {
+    text-align: center;
+    font-size: 14px;
+    color: #ccc;
+    margin-top: 15px;
+}
+
+.footer-policy a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer-policy a:hover {
+    color: #f4a261;
+}
+
+/* Стили для почты */
+.footer a[href^="mailto"] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #ccc;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.footer a[href^="mailto"] i {
+    font-size: 16px;
+    color: #f4a261;
+}
+
+.footer a[href^="mailto"]:hover {
+    color: #f4a261;
+}
+
+
+.footer_divide {
+    margin-top: 4em;
+}
+
+
+/* --------------------------------------------------------Адаптив: планшеты-------------------------------------------------- */
+@media (max-width: 1199px) {
+    .footer_wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+  }
+  
+  /* Адаптив: средние экраны */
+    @media (max-width: 991px) {
+        .footer_wrap {
+            flex-direction: column;
+            align-items: center;
+        }
+        .footer_nav {
+            border: none;
+        }
+        .footer_contacts {
+            border: none;
+        }
+  }
+  
+  /* Адаптив: телефоны */
+  @media (max-width: 767px) {
+    .footer_wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer_nav {
+        padding: 0;
+    }
+    .footer_nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer_contacts {
+        display: flex;
+        flex-direction: column;
+        line-height: 2em;
+    }
+    .footer_contacts p, .footer_contacts a {
+        font-size: 12px;
+    }
+  }

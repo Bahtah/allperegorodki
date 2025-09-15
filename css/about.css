@@ -1,0 +1,155 @@
+.about-history, .about-values, .about-stats, .about-reviews h2 {
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    text-align: center;
+    color: #222;
+    position: relative;
+    padding-bottom: 0.3em;
+}
+
+/* .section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #0056b3;
+    margin: 10px auto 0;
+    border-radius: 3px;
+} */
+
+/* Блок О компании */
+.about-hero {
+    padding: 80px 20px 0 20px;
+    background: #f9f9f9;        /* светлый фон для контраста */
+    text-align: center;
+}
+.about-hero h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #222;
+}
+.about-hero p {
+    text-align: justify;        /* аккуратное выравнивание */
+    text-justify: inter-word;   /* распределение пробелов */
+}
+
+/*общие стили для 2 блоков*/
+.about-hero p,
+.about-history p {
+    max-width: 900px;          /* ограничиваем ширину текста */
+    margin: 0 auto;            /* центрируем блок */
+    font-size: 18px;           /* чуть меньше, чем 22px, читать легче */
+    line-height: 1.8;          /* оптимальная высота строки */
+    color: #444;               /* более тёмный, мягкий цвет */
+    font-family: "Segoe UI", Roboto, Arial, sans-serif; /* современный шрифт */
+}
+
+/* Блок "История" */
+.about-history {
+    padding: 60px 20px;
+    background: #f9f9f9;
+}
+.about-history h2 {
+    margin-bottom: 30px;
+}
+.about-history p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* Блок Ценностей */
+.about-values {
+    margin-bottom: 6em;
+}
+.about-values ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+.about-values li {
+    background: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.about-values i {
+    font-size: 24px;
+    color: #0056b3;
+    margin-bottom: 10px;
+}
+
+/* Блок Достижений */
+.about-stats {
+    margin-bottom: 6em;
+}
+.stats-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.stat-item {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.stat-item i {
+    font-size: 30px;
+    color: #0056b3;
+    margin-bottom: 10px;
+}
+
+/* Блок Отзывов */
+.review {
+    background: white;
+    padding: 20px;
+    margin: 10px auto;
+    width: 60%;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.review p:first-child {
+    font-style: italic;
+}
+
+/*media--------------------------------*/
+@media (max-width: 991px) {
+    .about-values ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .team-members {
+        display: flex;
+        flex-direction: column;
+    }
+    .stats-grid {
+        flex-direction: column;
+    }
+    .about-hero {
+        margin: 1em auto;
+        padding: 0;
+    }
+    .about-hero p, .about-history p {
+        padding: 1em;
+    }
+    .about-history, .about-values, .about-team, .about-stats {
+        margin-bottom: 3em;
+    }
+    .about-hero p {
+        font-size: 16px;
+        line-height: 1.4em;
+    }
+    .about-history p {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+}
