@@ -11,16 +11,6 @@
     padding-bottom: 0.3em;
 }
 
-/* .section-title::after {
-    content: '';
-    display: block;
-    width: 60px;
-    height: 3px;
-    background-color: #0056b3;
-    margin: 10px auto 0;
-    border-radius: 3px;
-} */
-
 /* Блок О компании */
 .about-hero {
     padding: 80px 20px 0 20px;
@@ -31,6 +21,12 @@
     font-size: 40px;
     margin-bottom: 20px;
     color: #222;
+}
+.about-hero h2 {
+    margin: 2em 0;
+    font-size: 18px;
+    font-weight: bold;
+    color:#929090;
 }
 .about-hero p {
     text-align: justify;        /* аккуратное выравнивание */
